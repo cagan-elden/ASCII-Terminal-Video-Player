@@ -9,6 +9,8 @@ git clone https://github.com/cagan-elden/ASCII-Terminal-Video-Player/edit/main/R
 ```
 
 ## How to Use?
+To upload the video, create a new directory called `vidSrc` in `demo`, drag your video into the directory and rename it `sample.mp4`. If your video is in a format such as `Bad Apple`, you can rename it `sobel.mp4`.
+
 Unless the video is in black 'n white format such as `Bad Apple`, it is recommended to turn it into a computer-comprehensible version by `sobel-filters`. By default, Maven runs `Player.java` which plays videos on your terminal.
 
 If you want to play a normal video, turn it into `sobel-format` by accessing `demo/pom.xml`. You can change the file to execute when Maven is executed by changing `Player.java` to `App.java`, if you want to play a video keep it `Player.java`:
