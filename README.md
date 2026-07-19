@@ -5,7 +5,7 @@ This is an ASCII terminal video player built with Java and Maven for project-man
 To set up the repository on your device, run the following command on your terminal:
 
 ```bash
-git clone https://github.com/cagan-elden/ASCII-Terminal-Video-Player/edit/main/README.md
+git clone https://github.com/cagan-elden/ASCII-Terminal-Video-Player
 ```
 
 ## How to Use?
