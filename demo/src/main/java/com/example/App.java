@@ -99,18 +99,19 @@ public class App
                 }
 
                 // blur-convertor
-                RGBSum = new int[]{0, 0, 0};
                 RGB    = new int[]{0, 0, 0};
                 for (int y=1; y < height-1; y++) {
                     for (int x=1; x < width-1; x++) {
+
+                        RGBSum = new int[]{0, 0, 0}; // Don't delete this line!
 
                         for (int ky=-1; ky <= 1; ky++) {
                             for (int kx=-1; kx <= 1; kx++) {
                                 int pixel = grayscaleImage.getRGB(x+kx, y+ky);
 
-                                RGBSum[0] = (pixel >> 16) & 0xFF;
-                                RGBSum[1] = (pixel >> 8)  & 0xFF;
-                                RGBSum[2] = pixel & 0xFF;
+                                RGBSum[0] += (pixel >> 16) & 0xFF;
+                                RGBSum[1] += (pixel >> 8)  & 0xFF;
+                                RGBSum[2] += pixel & 0xFF;
                             }
                         }
 
