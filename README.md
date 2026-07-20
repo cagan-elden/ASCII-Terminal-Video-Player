@@ -33,4 +33,4 @@ mvn clean compile exec:java
 ```
 
 ## Configuration
-There are parts in the repo where I commented "Don't touch". Unless you know what you are doing, it is not recommended to change those parts.
+There are parts in the repo where I commented "Don't touch". Unless you know what you are doing, it is not recommended to change those parts. You can change the `powershellWidth` and `powershellHeight` values if you want to adjust the screens-size which you watch the video.
